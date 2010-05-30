@@ -1,1 +1,5 @@
 ^MYMETA.yml$
+.*\.swp$
+^Build$
+^_build\/
+^\.git/
