@@ -20,7 +20,7 @@ package main;
 use strict;
 use warnings;
 
-use Test::More tests => 10;
+use Test::More tests => 11;
 use Perlbal::Plugin::ExpandSSL;
 
 {
@@ -36,8 +36,9 @@ use Perlbal::Plugin::ExpandSSL;
     };
 }
 
-ok( Perlbal::Plugin::ExpandSSL::load(),   'load returns true'   );
-ok( Perlbal::Plugin::ExpandSSL::unload(), 'unload returns true' );
+ok( Perlbal::Plugin::ExpandSSL::load(),       'load returns true'       );
+ok( Perlbal::Plugin::ExpandSSL::unload(),     'unload returns true'     );
+ok( Perlbal::Plugin::ExpandSSL::unregister(), 'unregister returns true' );
 
 my $svc = FakeSVC->new;
 isa_ok( $svc, 'FakeSVC' );
