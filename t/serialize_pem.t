@@ -11,13 +11,14 @@ my @pem = (
     'this is the real beginning',
     'this is another line',
     'third line, almost last',
-    'last line',
+    'before last line',
+    '',
     '-----END CERTIFICATE-----',
 );
 
 my $pem = Perlbal::Plugin::ExpandSSL::serialize_pem(@pem);
 
-pop   @pem;
+pop   @pem for 1, 2;
 shift @pem;
 
 my $my_pem = join "\n", @pem;
