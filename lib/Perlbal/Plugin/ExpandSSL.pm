@@ -7,7 +7,7 @@ use Crypt::X509;
 use MIME::Base64;
 use File::Slurp;
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 my %registry = ();
 my %headers  = (
@@ -104,7 +104,7 @@ service
 
 =head1 VERSION
 
-Version 0.01
+Version 0.02
 
 =head1 SYNOPSIS
 
@@ -181,6 +181,8 @@ This plugin is on Github and you can file issues on:
 L<http://github.com/xsawyerx/perlbal-plugin-expandssl/issues>
 
 =head1 SUPPORT
+
+This module sports B<100% test coverage>, but in case you have more issues...
 
 You can find documentation for this module with the perldoc command.
 
