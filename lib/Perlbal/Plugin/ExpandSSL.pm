@@ -37,7 +37,8 @@ sub build_registry {
     my $der  = decode_base64($pem);
     my $cert = Crypt::X509->new( cert => $der );
 
-    if ( my $error = $cert->error ) {
+    if ( $cert->error ) {
+        my $error = $cert->error;
         warn "ERROR: $error\n";
         return 1;
     }
