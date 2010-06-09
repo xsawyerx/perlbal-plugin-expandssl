@@ -10,6 +10,7 @@ my $builder = Module::Build->new(
     dist_version_from   => 'lib/Perlbal/Plugin/ExpandSSL.pm',
     build_requires => {
         'Test::More' => 0,
+        'Test::Warn' => 0,
     },
     requires => {
         'perl'         => 5.006,
