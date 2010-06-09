@@ -3,7 +3,6 @@
     package FakeCert;
     use strict;
     use warnings;
-    use Test::More;
 
     my $found = 0;
 
@@ -19,10 +18,6 @@
 
 {
     package FakeSVC;
-    use strict;
-    use warnings;
-    use Test::More;
-
     sub new { return bless {}, shift }
 }
 
