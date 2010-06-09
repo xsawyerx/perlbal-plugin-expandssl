@@ -3,7 +3,7 @@ NAME
     a service
 
 VERSION
-    Version 0.01
+    Version 0.02
 
 SYNOPSIS
     This plugin adds a custom header according to information it reads off
@@ -70,6 +70,9 @@ BUGS
     <http://github.com/xsawyerx/perlbal-plugin-expandssl/issues>
 
 SUPPORT
+    This module sports 100% test coverage, but in case you have more
+    issues...
+
     You can find documentation for this module with the perldoc command.
 
         perldoc Perlbal::Plugin::ExpandSSL
